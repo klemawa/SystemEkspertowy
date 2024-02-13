@@ -1,0 +1,74 @@
+SZCHEMAT 1:
+
+cz_plodnosc = "płodna"
+
+Wiek: 21
+Wynik AMH: 2.50
+Menopauza: NIE
+Wynik FSH: 4
+Wynik Inhibina B: 60
+Poziom prolaktyny: 20
+Wynik cytologii: POZYTYWNY
+Wynik histeroskopi: POZYTYWNY
+Wynik TSH: 2
+Wynik kariotypu: 46XX
+Wynik GEN CFTR: POZYTYWNY
+Wynik ANTY HIV: POZYTYWNY
+Wynik VDRL: POZYTYWNY
+Wynik chlamydia PCR: 14
+Wynik przespochwowego badania USG: POZYTYWNY
+Wynik RBC: 4.50
+Wynik HGB: 7
+Wynik HCT: 39
+Wynik MCV: 85
+Wynik MCH: 30
+Wynik MCHC: 35
+Wynik WBC: 5
+Wynik LYM: 3
+Wynik MONO: 0.25
+Wynik PLT: 200
+Wynik cytomegalii IgG: 7
+Wynik różyczki IgM: POZYTYWNY
+Wynik różyczki IgG: 6
+Wynik toxoplazmozy IgG: POZYTYWNY
+
+SZCHEMAT 2:
+
+cz_plodnosc = "poprawa_amh","poprawa_cytologia","poprawa_badanie_hormonow_tarczycy,"poprawa_rozyczka_IgM"
+
+Wiek: 21
+Wynik AMH: 10
+Menopauza: NIE
+Wynik FSH: 4
+Wynik Inhibina B: 60
+Poziom prolaktyny: 20
+Wynik cytologii: NEGATYWNY
+Wynik histeroskopi: POZYTYWNY
+Wynik TSH: 6
+Wynik kariotypu: 46XX
+Wynik GEN CFTR: POZYTYWNY
+Wynik ANTY HIV: POZYTYWNY
+Wynik VDRL: POZYTYWNY
+Wynik chlamydia PCR: 14
+Wynik przespochwowego badania USG: POZYTYWNY
+Wynik RBC: 4.50
+Wynik HGB: 7
+Wynik HCT: 39
+Wynik MCV: 85
+Wynik MCH: 30
+Wynik MCHC: 35
+Wynik WBC: 5
+Wynik LYM: 3
+Wynik MONO: 0.25
+Wynik PLT: 200
+Wynik cytomegalii IgG: 4
+Wynik różyczki IgM: NEGATYWNY
+Wynik różyczki IgG: 6
+Wynik toxoplazmozy IgG: POZYTYWNY
+
+
+
+
+
+
+

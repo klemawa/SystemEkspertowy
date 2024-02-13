@@ -1,0 +1,716 @@
+knowledge base p³odnoœæ
+
+ facets
+       single yes;
+       
+       czy_plodnosc:
+       val someof {"p³odna","niep³odna","poprawa_rozyczka_IgG","poprawa_amh","poprawa_fsh","poprawa_inhibina_B","poprawa_poziom_prolaktyny","poprawa_cytologia","poprawa_histeroskopia","poprawa_badanie_hormonow_tarczycy","poprawa_kariotyp","poprawa_gen_cftr","poprawa_anty_hiv","poprawa_vdrl","poprawa_chlamydia_pcr","poprawa_przezpochwowe_pochwowe_usg ","poprawa_morfologia","poprawa_cytomegalia_IgG","poprawa_rozyczka_IgM ","poprawa_toxoplazmoza_IgG"};
+       
+       wynik_amh:
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_amh:     
+       query "Podaj wynik AMH:"
+       val range <0,50>;
+        
+       wynik_fsh:  
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_fsh: 
+       query "Podaj wynik FSH:"
+       val range <0,300>; 
+       
+       wynik_inhibina_B:       
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_inhibina_B:
+       query "Podaj wynik Inhibiny B:"       
+       val range <0,200>;
+       
+       wynik_poziom_prolaktyny:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_poziom_prolaktyny:
+       query "Podaj wynik poziomu prolaktyny:"
+       val range <0,100>; 
+       
+       wynik_cytologia:    
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_cytologia: 
+       query "Podaj ocenê wyniku cytologi:"    
+       val oneof {"pozytywny","negatywny"};
+       
+       wynik_histeroskopia:   
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_histeroskopia:
+       query "Podaj wynik histeroskopi:" 
+       val oneof {"pozytywny","negatywny"};
+       
+       wynik_badanie_hormonow_tarczycy: 
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_tsh:
+       query "Podaj wynik THS:" 
+       val range <0,100>;
+        
+       wynik_kariotyp:
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_kartiotyp:
+       query "Podaj wynik Kariotypu:" 
+       val oneof {"46,XX","47,XY,+21","47,XXY","45,X","47,XY,+mar","46,XY,t(8;12)(pl 1;q15)","45,XX,der(14;21)(p10;q10)","46,XX,del(5)(p25)","46,Xi(X)(q10)","46,XY,inv(18)(q21q23)","46,XX,r(7)(p22q36)"};
+       
+       wynik_gen_cftr:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_gen_cftr:
+       query "Podaj wynik CFTR:"  
+       val oneof {"pozytywny","negatywny"}; 
+       
+       wynik_anty_hiv:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_anty_hiv:
+       query "Podaj wynik ANTY HIV:" 
+       val oneof {"pozytywny","negatywny"}; 
+       
+       wynik_vdrl:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_vdrl:
+       query "Podaj wynik VDRL(pozytywna/negatywna):" 
+       val oneof {"pozytywny","negatywny"}; 
+       
+       wynik_chlamydia_pcr:
+       val oneof {"pozytywny","negatywny","w¹tpliwy"};
+       
+       norma_chlamydia_pcr:
+       query "Podaj wynik Chlamydia PCR:" 
+       val range <0,100>; 
+       
+       wynik_przezpochwowe_pochwowe_usg:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_przezpochwowe_pochwowe_usg:
+       query "Podaj wynik usg przezpochwowego:" 
+       val oneof {"pozytywny","negatywny"}; 
+       
+       wynik_morfologia:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_morfologia:
+       val oneof {"pozytywny","negatywny"};
+       
+       wynik_cytomegalia_IgG:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_cytomegalia_IgG:
+       query "Podaj wynik cytomegalii IgG:" 
+       val range <0,200>; 
+       
+       wynik_rozyczka_IgM:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_rozyczka_IgM:
+       query "Podaj wynik ró¿yczki IgM:" 
+       val oneof {"pozytywny","negatywny"}; 
+       
+       wynik_rozyczka_IgG:
+       val oneof {"pozytywny","negatywny"};
+       
+       norma_rozyczka_IgG:
+       query "Podaj wynik ró¿yczki IgG:"
+       val range <0,100>;
+       
+       wynik_toxoplazmoza_IgG:
+       val oneof {"pozytywny","negatywny"}; 
+       
+       norma_toxoplazmoza_IgG:
+       query "Podaj wynik toxoplazmozy IgG:"
+       val oneof {"pozytywny","negatywny"};
+       
+       wiek:
+       query "Wiek:"
+       val range <0,100>;
+
+       
+       menopauza:
+       query "Czy menopauza:"
+       val oneof {"tak","nie"};
+       
+       rbc:
+       val oneof {"pozytywne","negatywne"};
+       
+       hgb:
+       val oneof {"pozytywne","negatywne"};
+       
+       hct:
+       val oneof {"pozytywne","negatywne"};
+       
+       mcv:
+       val oneof {"pozytywne","negatywne"};
+       
+       mch:
+       val oneof {"pozytywne","negatywne"};
+       
+       mchc:
+       val oneof {"pozytywne","negatywne"};
+       
+       wbc:
+       val oneof {"pozytywne","negatywne"};
+       
+       lym:
+       val oneof {"pozytywne","negatywne"};
+       
+       mono:
+       val oneof {"pozytywne","negatywne"};
+       
+       plt:
+       val oneof {"pozytywne","negatywne"};
+       
+       norma_rbc:
+       query "Podaj wynik RBC:"
+       val range <0,10>;
+       
+       norma_hgb:
+       query "Podaj wynik HGB:"
+       val range <0,20>;
+       
+       norma_hct:
+       query "Podaj wynik HCT:"
+       val range <0,200>;
+       
+       norma_mcv:
+       query "Podaj wynik MCV:"
+       val range <0,200>;
+       
+       norma_mch:
+       query "Podaj wynik MCH:"
+       val range <0,100>;
+       
+       norma_mchc:
+       query "Podaj wynik MCHC:"
+       val range <0,100>;
+       
+       norma_wbc:
+       query "Podaj wynik WBC:"
+       val range <0,100>;
+       
+       norma_lym:
+       query "Podaj wynik LYM:"
+       val range <0,100>;
+       
+       norma_mono:
+       query "Podaj wynik MONO:"
+       val range <0,100>;
+       
+       norma_plt:
+       query "Podaj wynik PLT:"
+       val range <0,200>;
+        
+       wynik_amh_1:
+       val oneof {"tak","nie"};
+         
+       wynik_amh_2:
+       val oneof {"tak","nie"};
+             
+       wynik_amh_3:
+       val oneof {"tak","nie"};
+           
+       wynik_amh_4:
+       val oneof {"tak","nie"};
+            
+       wynik_amh_5:
+       val oneof {"tak","nie"};
+       
+       wynik_amh_6:
+       val oneof {"tak","nie"};
+       
+       
+       
+             
+ end;
+ rules
+       czy_plodnosc = "p³odna" if
+       wynik_amh = "pozytywny",
+       wynik_fsh = "pozytywny",
+       wynik_inhibina_B = "pozytywny",
+       wynik_poziom_prolaktyny = "pozytywny",
+       wynik_cytologia = "pozytywny",
+       wynik_histeroskopia = "pozytywny",
+       wynik_badanie_hormonow_tarczycy = "pozytywny",
+       wynik_kariotyp = "pozytywny",
+       wynik_gen_cftr = "pozytywny",
+       wynik_anty_hiv = "pozytywny",
+       wynik_vdrl = "pozytywny",
+       wynik_chlamydia_pcr = "pozytywny",
+       wynik_przezpochwowe_pochwowe_usg = "pozytywny",
+       wynik_morfologia = "pozytywny",
+       wynik_cytomegalia_IgG = "pozytywny",
+       wynik_rozyczka_IgM = "pozytywny",
+       wynik_rozyczka_IgG = "pozytywny",
+       wynik_toxoplazmoza_IgG = "pozytywny";
+       
+       czy_plodnosc = "niep³odna" if
+       wynik_amh = "negatywny"|
+       wynik_fsh = "negatywny"|
+       wynik_inhibina_B = "negatywny"|
+       wynik_poziom_prolaktyny = "negatywny"|
+       wynik_cytologia = "negatywny"|
+       wynik_histeroskopia = "negatywny"|
+       wynik_badanie_hormonow_tarczycy = "negatywny"|
+       wynik_kariotyp = "negatywny"|
+       wynik_gen_cftr = "negatywny"|
+       wynik_anty_hiv = "negatywny"|
+       wynik_vdrl = "negatywny"|
+       wynik_chlamydia_pcr = "negatywny"|
+       wynik_przezpochwowe_pochwowe_usg = "negatywny"|
+       wynik_morfologia = "negatywny"|
+       wynik_cytomegalia_IgG = "negatywny"|
+       wynik_rozyczka_IgM = "negatywny"|
+       wynik_rozyczka_IgG = "negatywny"|
+       wynik_toxoplazmoza_IgG = "negatywny";
+       
+       czy_plodnosc = "poprawa_amh" if
+       wynik_amh = "negatywny";
+       
+       czy_plodnosc = "poprawa_fsh" if
+       wynik_fsh = "negatywny";
+       
+       czy_plodnosc = "poprawa_inhibina_B" if
+       wynik_inhibina_B = "negatywny";
+       
+       czy_plodnosc = "poprawa_poziom_prolaktyny" if
+       wynik_poziom_prolaktyny = "negatywny";
+       
+       
+       czy_plodnosc = "poprawa_cytologia" if
+       wynik_cytologia = "negatywny";
+     
+       
+       czy_plodnosc = "poprawa_histeroskopia" if
+       wynik_histeroskopia = "negatywny";
+     
+       
+       czy_plodnosc = "poprawa_badanie_hormonow_tarczycy" if
+       wynik_badanie_hormonow_tarczycy = "negatywny";
+     
+       
+       czy_plodnosc = "poprawa_kariotyp" if
+       wynik_kariotyp = "negatywny";
+
+       
+       czy_plodnosc = "poprawa_gen_cftr" if
+       wynik_gen_cftr = "negatywny";
+ 
+       
+       czy_plodnosc = "poprawa_anty_hiv" if
+       wynik_anty_hiv = "negatywny";
+
+       
+       czy_plodnosc = "poprawa_vdrl" if
+       wynik_vdrl = "negatywny";
+     
+       
+       czy_plodnosc = "poprawa_chlamydia_pcr" if
+       wynik_chlamydia_pcr = "negatywny";
+
+       
+       czy_plodnosc = "poprawa_przezpochwowe_pochwowe_usg " if
+       wynik_przezpochwowe_pochwowe_usg = "negatywny";
+
+       
+       czy_plodnosc = "poprawa_cytomegalia_IgG" if
+       wynik_cytomegalia_IgG = "negatywny";
+  
+       
+       czy_plodnosc = "poprawa_rozyczka_IgM " if
+       wynik_rozyczka_IgM = "negatywny";
+    
+       
+       czy_plodnosc = "poprawa_rozyczka_IgG" if
+       wynik_rozyczka_IgG = "negatywny";
+       
+       czy_plodnosc = "poprawa_toxoplazmoza_IgG" if
+       wynik_toxoplazmoza_IgG = "negatywny";
+       
+       wynik_amh_1 = "tak" if
+       wiek = X,
+       X>=20,X<25;
+       
+       wynik_amh_1 = "nie" if
+       wiek = X,X<20;
+       
+       wynik_amh_1 = "nie" if
+       wiek = X,X>25; 
+       
+       wynik_amh = "pozytywny" if   
+       wynik_amh_1 = "tak",
+       norma_amh = Z,
+       Z>=1.52,Z<=9.95;
+       
+       wynik_amh = "negatywny" if   
+       wynik_amh_1 = "tak",
+       norma_amh = Z,Z<1.52;
+
+       
+       wynik_amh = "negatywny" if   
+       wynik_amh_1 = "tak",
+       norma_amh = Z,Z>9.95;
+
+       
+       wynik_amh_2 = "tak" if
+       wiek = X,
+       X>=25,X<30;
+       
+       wynik_amh_2 = "nie" if
+       wiek = X,X<25;
+       
+       wynik_amh_2 = "nie" if
+       wiek = X,X>30;
+       
+       wynik_amh = "pozytywny" if
+       wynik_amh_2 = "tak",
+       norma_amh = Z,
+       Z>=1.20,Z<=9.05;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_2 = "tak",
+       norma_amh = Z,Z<1.20;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_2 = "tak",
+       norma_amh = Z,Z>9.05;
+         
+       wynik_amh_3 = "tak" if
+       wiek = X,
+       X>=30,X<35;
+       
+       wynik_amh_3 = "nie" if
+       wiek = X,X<30;
+       
+       wynik_amh_3 = "nie" if
+       wiek = X,X>35;
+       
+       wynik_amh = "pozytywny" if
+       wynik_amh_3 = "tak",
+       norma_amh = Z,
+       Z>=0.711,Z<=7.59;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_3 = "tak",
+       norma_amh = Z,Z<0.711;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_3 = "tak",
+       norma_amh = Z,Z<7.59;
+       
+       wynik_amh_4 = "tak" if
+       wiek = X,
+       X>=35,X<40;
+       
+       wynik_amh_4 = "nie" if
+       wiek = X,X<35;
+       
+       wynik_amh_4 = "nie" if
+       wiek = X,X<35;
+       
+       wynik_amh = "pozytywny" if
+       wynik_amh_4 = "tak",
+       norma_amh = Z,
+       Z>=0.405,Z<=6.96;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_4 = "tak",
+       norma_amh = Z,Z<0.405;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_4 = "tak",
+       norma_amh = Z,Z>6.96;
+       
+       wynik_amh_5 = "tak" if
+       wiek = X,
+       X>=40,X<45;
+       
+       wynik_amh_5 = "nie" if
+       wiek = X,X<40;
+       
+       wynik_amh_5 = "nie" if
+       wiek = X,X>45;
+       
+       wynik_amh = "pozytywny" if
+       wynik_amh_5 = "tak",
+       norma_amh = Z,
+       Z>=0.059,Z<=4.44;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_5 = "tak",
+       norma_amh = Z,Z<0.059;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_5 = "tak",
+       norma_amh = Z,Z>4.44;
+       
+       wynik_amh_6 = "tak" if
+       wiek = X,
+       X>=45,X<50;
+       
+       wynik_amh_6 = "nie" if
+       wiek = X,X<45;
+       
+       wynik_amh_6 = "nie" if
+       wiek = X,X>50;
+       
+       wynik_amh = "pozytywny" if
+       wynik_amh_6 = "tak",
+       norma_amh = Z,
+       Z>=0.01,Z<=1.79;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_6 = "tak",
+       norma_amh = Z,Z<0.01;
+       
+       wynik_amh = "negatywny" if
+       wynik_amh_6 = "tak",
+       norma_amh = Z,Z>1.79;
+       
+       wynik_fsh = "pozytywny" if //zak³adaj¹c ¿e badania wykonane w 2 do 5 dnia cyklu miesi¹czkowego 
+       menopauza = "nie",
+       norma_fsh = X,
+       X>3.5,X<12.5;
+       
+       wynik_fsh = "negatywny" if
+       menopauza = "tak",
+       norma_fsh = X,
+       X>3.5,X<12.5;
+       
+       wynik_fsh = "negatywny" if
+       menopauza = "nie",
+       norma_fsh = X,
+       X<3.5,X>12.5;
+       
+       wynik_inhibina_B = "pozytywny" if  //zak³adaj¹c ¿e badania wykonane w 3 do 5 dnia cyklu miesi¹czkowego 
+       norma_inhibina_B = X,
+       X>=45,X<=120;
+       
+       wynik_inhibina_B = "negatywny" if 
+       norma_inhibina_B = X,
+       X>0,X<45;
+       
+       wynik_inhibina_B = "negatywny" if  
+       norma_inhibina_B = X,X >120;
+       
+       wynik_poziom_prolaktyny = "pozytywny" if // 2 a 5 dzieñ cyklu miesi¹czkowgo
+       norma_poziom_prolaktyny = X,X <23;
+       
+       wynik_poziom_prolaktyny = "negatywny" if // 2 a 5 dzieñ cyklu miesi¹czkowgo
+       norma_poziom_prolaktyny = X,X >23;
+       
+       wynik_badanie_hormonow_tarczycy = "pozytywny" if
+       norma_tsh = X,
+       X>=0.4,X<=4.5;
+       
+       wynik_badanie_hormonow_tarczycy = "negatywny" if
+       norma_tsh = X,X>4.5;
+       
+       wynik_badanie_hormonow_tarczycy = "negatywny" if
+       norma_tsh = X,X<0.4;
+       
+       wynik_kariotyp = "pozytywny" if
+       norma_kartiotyp = "46,XX";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "47,XY,+21";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "47,XXY";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "45,X";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "47,XY,+mar";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "46,XY,t(8;12)(pl 1;q15)";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "45,XX,der(14;21)(p10;q10)";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "46,XX,del(5)(p25)";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "46,Xi(X)(q10)";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "46,XY,inv(18)(q21q23)";
+       
+       wynik_kariotyp = "negatywny" if
+       norma_kartiotyp = "46,XX,r(7)(p22q36)";
+       
+       wynik_chlamydia_pcr = "pozytywny" if
+       norma_chlamydia_pcr =X,X < 16;
+       
+       wynik_chlamydia_pcr = "negatywny" if
+       norma_chlamydia_pcr =X,X > 22;
+       
+       wynik_chlamydia_pcr = "w¹tpliwy" if
+       norma_chlamydia_pcr =X,
+       X>16,X<22;
+       
+       wynik_morfologia = "pozytywny" if
+       rbc = "pozytywne", 
+       hgb = "pozytywne", 
+       hct = "pozytywne", 
+       mcv = "pozytywne",
+       mch = "pozytywne", 
+       mchc = "pozytywne", 
+       wbc = "pozytywne", 
+       lym = "pozytywne", 
+       mono = "pozytywne", 
+       plt = "pozytywne"; 
+       
+       wynik_morfologia = "negatywny" if
+       rbc = "negatywne";
+       
+       wynik_morfologia = "negatywny" if
+       hgb = "negatywne"; 
+     
+       wynik_morfologia = "negatywny" if
+       hct = "negatywne"; 
+      
+       wynik_morfologia = "negatywny" if
+       mcv = "negatywne";
+       
+       wynik_morfologia = "negatywny" if
+       mch = "negatywne"; 
+       
+       wynik_morfologia = "negatywny" if
+       mchc = "negatywne";
+     
+       wynik_morfologia = "negatywny" if
+       wbc = "negatywne"; 
+   
+       wynik_morfologia = "negatywny" if
+       lym = "negatywne"; 
+      
+       wynik_morfologia = "negatywny" if
+       mono = "negatywne"; 
+
+       wynik_morfologia = "negatywny" if
+       plt = "negatywne";
+       
+       wynik_cytomegalia_IgG = "pozytywny" if
+       norma_cytomegalia_IgG = X,X <4;
+       
+       wynik_cytomegalia_IgG = "negatywny" if
+       norma_cytomegalia_IgG = X,X >=4 ;
+       
+       wynik_rozyczka_IgG = "pozytywny" if
+       norma_rozyczka_IgG = X,X < 10;
+       
+       wynik_rozyczka_IgG = "negatywny" if
+       norma_rozyczka_IgG = X,X >=10;
+       
+       rbc = "pozytywne" if
+       norma_rbc = X,
+       X>=3.9,X<=5.6;
+       
+       rbc = "negatywne" if
+       norma_rbc = X,
+       X < 3.9,X > 5.6;
+       
+       hgb = "pozytywne" if
+       norma_hgb = X,
+       X>=6.3,X<=9.3;
+       
+       hgb = "negatywne" if
+       norma_hgb = X,
+       X < 6.3,X > 9.3;
+       
+       hct = "pozytywne" if
+       norma_hct = X,
+       X>=37,X<=47;
+       
+       hct = "negatywne" if
+       norma_hct = X,
+       X < 37,X > 47;
+       
+       mcv = "pozytywne" if
+       norma_mcv = X,
+       X>=80,X<=97;
+       
+       mcv = "negatywne" if
+       norma_mcv = X,
+       X < 80,X > 97;
+       
+       mch = "pozytywne" if
+       norma_mch = X,
+       X>=26,X<=32;
+       
+       mch = "negatywne" if
+       norma_mch = X,
+       X <26,X > 32;
+       
+       mchc = "pozytywne" if
+       norma_mchc = X,
+       X>=31,X<=36;
+       
+       mchc = "negatywne" if
+       norma_mchc = X,X < 31,X > 36;
+       
+       wbc = "pozytywne" if
+       norma_wbc = X,
+       X>=4.1,X<=10.9;
+       
+       wbc = "negatywne" if
+       norma_wbc = X,X < 4.1,X > 10.9;
+       
+       lym = "pozytywne" if
+       norma_lym = X,
+       X>=0.6,X<=4.1;
+       
+       lym = "negatywne" if
+       norma_lym = X,
+       X < 0.6,X > 4.1;
+       
+       mono = "pozytywne" if
+       norma_mono = X,
+       X>=0.1,X<=0.4;
+       
+       mono = "negatywne" if
+       norma_mono = X,
+       X < 0.1,X > 0.4;
+       
+       plt = "pozytywne" if
+       norma_plt = X,
+       X>=140,X<=440;
+       
+       plt = "negatywne" if
+       norma_plt = X,
+       X < 140,X > 440;
+       
+       
+ end;
+  control
+       run;
+       createAppWindow;
+       setAppWinTitle("P³odnoœæ");  
+       vignette("P³odnoœæ u kobiet", 
+                "Aplikacja wspomagaj¹ca rozpoznanie ryzyka niep³odnoœci u kobiet",
+                "© Klementyna Waœ 2022");
+       setSysText(notConfirmed, "Brak podstaw do oceny ryzyka"); 
+       menu "Konsultacja"
+       1. "Ocena ryzyka"
+       2. "Wyjœcie"
+       case 1:
+            goal("czy_plodnosc = Ocena");
+            delNewFacts;
+       case 2:
+            exit;
+       end;
+ end;
+end;    
